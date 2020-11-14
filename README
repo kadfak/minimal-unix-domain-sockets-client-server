@@ -1,0 +1,22 @@
+Minimal Unix domain sockets client-server example
+
+Build and run:
+./build.sh
+
+./server
+./client
+
+client> sent 3 bytes: 123
+server> received 3 bytes: 123
+server> sent 3 bytes: 456
+client> received 3 bytes: 456
+
+Relevant manpages:
+- man 3 socket
+- man 7 unix
+- man 0 sys_un.h
+- man 3 bind
+- man 3 listen
+- man 3 accept
+- man 3 recv
+- man 3 send
