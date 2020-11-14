@@ -38,7 +38,7 @@ main()
     }
 
     struct sockaddr_un client_address;
-    socklen_t client_address_length;
+    socklen_t client_address_length = sizeof(client_address);
     int client_socket_fd = accept(socket_fd, (struct sockaddr *)&client_address, &client_address_length);
     if (client_socket_fd < 0) {
         printf("failed to accept: %d\n", errno);
